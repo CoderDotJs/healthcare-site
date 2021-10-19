@@ -7,14 +7,18 @@ import google from './google.png';
 
 const Login = () => {
 
-    
+    // get the fuctions form the hooks 
 
     const { googleSignIn, getEmail, getPassowrd, signInWithEmail, error, setError} = useAuth();
+
+    // using locatin history hoooks 
 
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/health'
     
+        // function for handle the sign in 
+
     const handleSignIn = (e) =>{
         e.preventDefault()
         signInWithEmail()
@@ -29,6 +33,8 @@ const Login = () => {
             
         })
     }
+
+    // function for handgle the google sign in 
 
     const handleGoogleSignIn = () =>{
         googleSignIn()
@@ -47,6 +53,9 @@ const Login = () => {
     
 
     return (
+
+            // log in form 
+
         <div className="container-fluid h-100 my-5">
             <div className="" style={{"marginTop" : "0px"}}>
                 <div className="rounded d-flex justify-content-center">

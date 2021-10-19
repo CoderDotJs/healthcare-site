@@ -16,39 +16,45 @@ import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
+
+      // main app 
+
     <div className="App">
+
+      {/* all router inside auth provider  */}
+
       <AuthProvider>
       <BrowserRouter>
       <Header></Header>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/">  {/**for root direcotry */}
             <Home></Home>
           </Route>
-          <Route exact path="/home">
+          <Route exact path="/home"> {/*for home direcotry*/ }
             <Home></Home>
           </Route>
-          <PrivateRoute exact path="/find-a-doctor">
+          <PrivateRoute exact path="/find-a-doctor"> {/*for doctor direcotry*/ }
             <FindDoctor></FindDoctor>
           </PrivateRoute>
-          <Route exact path="/find-a-hospital">
+          <Route exact path="/find-a-hospital"> {/*for find a hospital direcotry*/ }
             <FindHospital></FindHospital>
           </Route>
-          <Route exact path="/health">
+          <Route exact path="/health"> {/*for health section direcotry*/ }
             <Health></Health>
           </Route>
-          <PrivateRoute exact path="/services/:services_name">
+          <PrivateRoute exact path="/services/:services_name"> {/*for service view direcotry*/ }
               <ServiceDetail></ServiceDetail>
           </PrivateRoute>
-          <PrivateRoute exact path="/health/:title">
+          <PrivateRoute exact path="/health/:title"> {/*for per post on health direcotry*/ }
               <HealthDetails></HealthDetails>
           </PrivateRoute>
-          <Route exact path="/login">
+          <Route exact path="/login"> {/*for login direcotry*/ }
             <Login></Login>
           </Route>
-          <Route exact path="/signup">
+          <Route exact path="/signup"> {/*for signup direcotry*/ }
             <Signup></Signup>
           </Route>
-          <Route exact path="*">
+          <Route exact path="*"> {/*for 404 direcotry*/ }
             <NotFoundPage></NotFoundPage>
           </Route>
         </Switch>

@@ -3,3 +3,62 @@
 body{
     font-family: "Roboto",Arial,Helvetica,sans-serif;
 }
+
+        /* meadia for medium size device  */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .services__heading{
+        font-size: 40px !important;
+    }
+    .banner__heading{
+        font-size: 3rem !important;
+    }
+}
+
+    /* media for small size device  */
+
+@media screen and (max-width: 575px) {
+    .services__heading{
+        font-size: 30px !important;
+    }
+    .banner__heading{
+        font-size: 2rem !important;
+    }
+    .fa-4x{
+        font-size: 25px;
+    }
+    .banner__service{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .banner__service p{
+        font-size: 11px;
+    }
+    .dove__text{
+        font-size: 12px;
+    }
+}
+
+    /* media for tablet  */
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .services__heading{
+        font-size: 45px !important;
+    }
+    .banner__heading{
+        font-size: 2.5rem !important;
+    }
+}
+
+    /* media for small size laptop  */
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .services__heading{
+        font-size: 45px !important;
+    }
+    .banner__heading{
+        font-size: 2.5rem !important;
+    }
+}

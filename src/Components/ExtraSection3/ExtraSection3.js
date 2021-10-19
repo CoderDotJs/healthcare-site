@@ -5,10 +5,28 @@ import './ExtraSection3.css'
 
 const ExtraSection3 = () => {
     return (
+
+
+            // extra section 3 
+
         <div className="container-fluid my-5" style={{"background": "#D3FBFF"}}>
+
+
+            {/* row  */}
+
             <Row className="container py-5 mx-auto">
+
+                {/* col  */}
+
                 <Col>
+
+                {/* row  */}
+
                     <Row className="g-4">
+
+
+                    {/* col  */}
+
                         <Col lg={6} md={6}>
                         <div class="card border-0 shadow shoadow-md" style={{"width": "18rem;"}}>
                             <img src="https://photos.healthgrades.com/homeimages/fah-content-2.webp" class="card-img-top" alt="..."/>
@@ -17,6 +35,10 @@ const ExtraSection3 = () => {
                             </div>
                         </div>
                         </Col>
+
+
+                    {/* col  */}
+
                         <Col lg={6} md={6}>
                         <div class="card border-0 shadow shoadow-md" style={{"width": "18rem;"}}>
                             <img src="https://photos.healthgrades.com/homeimages/fah-content-1.webp" class="card-img-top" alt="..."/>
@@ -25,6 +47,9 @@ const ExtraSection3 = () => {
                             </div>
                         </div>
                         </Col>
+
+                        {/* col  */}
+
                         <Col lg={12} md={12}>
                         <div class="card border-0 shadow shoadow-md" style={{"width": "40rem;"}}>
                             <img src="https://photos.healthgrades.com/homeimages/fah-content-3.jpg" alt="..."/>
@@ -35,6 +60,10 @@ const ExtraSection3 = () => {
                         </Col>
                     </Row>
                 </Col>
+
+
+                {/* col  */}
+
                 <Col className="d-flex justify-content-center align-items-center p-5">
                     <div>
                         <h2 className="fw-bold">Finding the <br/> <small className="underline-highlight highlight">Right Hospital Matters</small></h2>

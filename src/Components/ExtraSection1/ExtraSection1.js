@@ -3,12 +3,16 @@ import { Container, } from 'react-bootstrap';
 
 const ExtraSection1 = () => {
     return (
+
+
+                // extra section 
+
         <Container className="my-5 text-center">
             <h1 className="services__heading">Find the right care, <span className="underline-highlight">doctor</span> </h1>
             <h1 className="services__heading">hospital right at your fingertips</h1>
             <p className="my-3">Healthgrades gives you the tools and information you need to:</p>
 
-            
+            {/* column  */}
 
             <div class="row row-cols-1 row-cols-md-3 g-4 my-5">
                 <div class="col">
@@ -20,6 +24,9 @@ const ExtraSection1 = () => {
                         </p>
                     </div>
                 </div>
+
+                {/* column  */}
+
                 <div class="col">
                     <div class="card h-100 d-flex flex-column justify-content-around align-items-center">
                         <h3 class="card-title my-3">Control</h3>
@@ -29,6 +36,9 @@ const ExtraSection1 = () => {
                         </p>
                     </div>
                 </div>
+
+                    {/* column  */}
+
                 <div class="col">
                     <div class="card h-100 d-flex flex-column justify-content-around align-items-center">
                         <h3 class="card-title my-3">Prepare</h3>

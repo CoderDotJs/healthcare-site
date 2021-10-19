@@ -5,8 +5,14 @@ import './ServiceCard.css'
 
 
 const ServiceCard = (props) => {
+
+        // get the data using props 
+
     const {service_name, img} = props.prop;
     return (
+
+            // service data show with card 
+
             <Col as={Link} style={{"textDecoration": "none"}} to={`/services/${service_name.toLowerCase()}`} xs={12} sm={6} md={4} lg={2} className="d-flex flex-column justify-content-center align-items-center">
             <div className="service__icon_container">
                 <i className={`${img} fa-3x services__icon`}></i>

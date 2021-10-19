@@ -5,13 +5,19 @@ import useAuth from '../../Hooks/useAuth';
 import google from '../Login/google.png';
 
 const Signup = () => {
+
+    // getting the function form useAuth 
+
     const { googleSignIn, getEmail, getPassowrd, signUpWithEmail, error, setError} = useAuth();
 
+    // using location history 
 
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || '/health'
     
+        // handle the sign up button 
+
     const handleSignUp = (e) =>{
         e.preventDefault()
         signUpWithEmail()
@@ -26,6 +32,8 @@ const Signup = () => {
             
         })
     }
+
+    // handle the signup function for google sign up 
 
     const handleGoogleSignUp = () =>{
         googleSignIn()
@@ -42,6 +50,9 @@ const Signup = () => {
     }
     
 return (
+
+    // sign up form 
+
     <div className="container-fluid h-100 my-5" >
         <div className="" style={{"marginTop" : "0px"}}>
             <div className="rounded d-flex justify-content-center">

@@ -7,6 +7,9 @@ import Services from '../Services/Services';
 
 const Home = () => {
     return (
+
+            // home section data 
+
         <div>
             <Banner></Banner>
             <Services></Services>

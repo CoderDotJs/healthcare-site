@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         
-        //   Footer 
+        //   Footer section 
 <footer className="text-center text-lg-start bg-light text-muted">
   {/*   Section: Social media  */}
   <section

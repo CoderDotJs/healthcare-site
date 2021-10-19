@@ -5,7 +5,11 @@ import './Services.css'
 
 const Services = () => {
 
+    // managing state 
+
     const [service, setService] = useState([])
+
+        // fetching the data 
 
     useEffect(()=>{
         fetch('./service.json')
@@ -13,13 +17,19 @@ const Services = () => {
         .then(data => setService(data))
     }, [])
 
-    console.log(service)
+    
     return (
+
+            // services section 
+
         <div id="services">
             <h1 className="text-center services__heading">Our All <span className="underline-highlight ">Services</span></h1>
 
             <Container className="my-5">
                 <Row>
+
+
+                    {/* dynamic data show on service  */}
                 {
                 service?.map((simple)=>{
                    return(
