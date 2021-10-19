@@ -9,7 +9,7 @@ const Login = () => {
 
     // get the fuctions form the hooks 
 
-    const { googleSignIn, getEmail, getPassowrd, signInWithEmail, error, setError} = useAuth();
+    const { googleSignIn, setIsLoading, getEmail, getPassowrd, signInWithEmail, error, setError} = useAuth();
 
     // using locatin history hoooks 
 
@@ -20,6 +20,7 @@ const Login = () => {
         // function for handle the sign in 
 
     const handleSignIn = (e) =>{
+        setIsLoading(true)
         e.preventDefault()
         signInWithEmail()
         .then(()=>{
@@ -30,13 +31,14 @@ const Login = () => {
         }).catch((err)=>{
             setError(err)
         }).finally(()=>{
-            
+            setIsLoading(false)
         })
     }
 
     // function for handgle the google sign in 
 
     const handleGoogleSignIn = () =>{
+        setIsLoading(true)
         googleSignIn()
         .then(()=>{
             setError('')
@@ -46,7 +48,7 @@ const Login = () => {
         }).catch((err)=>{
             setError(err)
         }).finally(()=>{
-            
+            setIsLoading(false)
         })
     }
 

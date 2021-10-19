@@ -22,11 +22,11 @@ const Services = () => {
 
             // services section 
 
-        <div id="services">
+        <div id="services" className="my-5">
             <h1 className="text-center services__heading">Our All <span className="underline-highlight ">Services</span></h1>
 
-            <Container className="my-5">
-                <Row>
+            <div className="container mx-auto row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-sm-1">
+                
 
 
                     {/* dynamic data show on service  */}
@@ -42,8 +42,7 @@ const Services = () => {
                    )
                 })
                 }
-                </Row>
-            </Container>
+            </div>
 
         </div>
     );

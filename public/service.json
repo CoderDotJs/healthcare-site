@@ -2,31 +2,37 @@
 {
     "id":1,
     "service_name":"Family Medicine",
-    "img": "fas fa-briefcase-medical"
+    "img": "fas fa-briefcase-medical",
+    "desc": "Know about the Family Medicine who are good at this"
 },
 {
     "id":2,
     "service_name":"Medicine Specs",
-    "img":"fas fa-stethoscope"
+    "img":"fas fa-stethoscope",
+    "desc": "Know about the the Medicine Specs and they are good at it"
 },
 {
     "id":3,
     "service_name":"Dentistry",
-    "img":"fas fa-tooth"
+    "img":"fas fa-tooth",
+    "desc": "Do your Dentistry with the Best Destist"
 },
 {
     "id":4,
     "service_name":"Orthopedic Surgery",
-    "img": "fas fa-bone"
+    "img": "fas fa-bone",
+    "desc": "Do your expensive surgury by the best"
 },
 {
     "id":5,
     "service_name":"Obstetrics Gynecology",
-    "img": "fas fa-baby"
+    "img": "fas fa-baby",
+    "desc": "Get Advice for the obstetrics on gynecology"
 },
 {
     "id":6,
     "service_name":"Anxiety",
-    "img":"fas fa-head-side-virus"
+    "img":"fas fa-head-side-virus",
+    "desc": "Get the best Anxiety relief form the best"
 }
 ]

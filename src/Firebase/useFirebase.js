@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut,updateProfile, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useEffect, useState } from "react";
 import firebaseInitialization from "./firebase.initialization";
 
@@ -9,13 +9,19 @@ const useFirebase = () => {
     const provider = new GoogleAuthProvider();
     const [user, setUser] = useState({});
     const [email, setEmail] = useState('');
+    const[name, setName] = useState('')
     const [password, setPassword] = useState('');
     const [error, setError] = useState('')
-
+    const [isLoading, setIsLoading] = useState(true)
     //getting the email from input
 
     const getEmail = (e) =>{
         setEmail(e.target.value)
+    }
+
+    //getting the name form the input 
+    const getName = (e) =>{
+        setName(e.target.value)
     }
 
     //getting the password from input
@@ -36,10 +42,16 @@ const useFirebase = () => {
         onAuthStateChanged(auth, user =>{
             if(user !== null){
                 setUser(user)
+                updateProfile(auth.currentUser, {
+                    displayName: name,
+                  }).then(()=>{
+                      console.log(user.displayName)
+                  })
             }
             else{
                 setUser({})
             }
+            setIsLoading(false)
         })
     }, []);
 
@@ -56,6 +68,16 @@ const useFirebase = () => {
         })
     };
 
+
+    const nameUpdate = () =>{
+        
+        updateProfile(auth.currentUser, {
+            displayName: name,
+          }).then(()=>{
+              console.log("name added")
+          })
+    }
+
     //sign up with input form
 
     const signUpWithEmail = (e) =>{
@@ -65,18 +87,29 @@ const useFirebase = () => {
     //sign in with input form 
 
     const signInWithEmail = (e) =>{
-        // e.preventDefault()
-        // signInWithEmailAndPassword(auth, email, password)
-        // .then((result)=>{
-        //     setUser(result.user)
-        // }).catch((err)=>{
-        //     alert(err)
-        // })
+        
         return signInWithEmailAndPassword(auth, email, password)
     }
 
 
-  return {googleSignIn,error, setError, auth, user, logOut, getEmail, getPassowrd, signUpWithEmail, signInWithEmail}
+  return {
+        googleSignIn,
+        error, 
+        setError, 
+        auth, 
+        user, 
+        logOut,
+        isLoading,
+        setIsLoading,
+        getEmail, 
+        getName,
+        name,
+        setName,
+        nameUpdate,
+        updateProfile,
+        getPassowrd, 
+        signUpWithEmail, 
+        signInWithEmail}
 }
 
 

@@ -8,7 +8,7 @@ const Signup = () => {
 
     // getting the function form useAuth 
 
-    const { googleSignIn, getEmail, getPassowrd, signUpWithEmail, error, setError} = useAuth();
+    const { googleSignIn, auth, updateProfile, setIsLoading, getEmail, getPassowrd, signUpWithEmail, error, setError, getName, name, setName, nameUpdate} = useAuth();
 
     // using location history 
 
@@ -19,23 +19,31 @@ const Signup = () => {
         // handle the sign up button 
 
     const handleSignUp = (e) =>{
+        setIsLoading(true)
         e.preventDefault()
+        
         signUpWithEmail()
         .then(()=>{
+            nameUpdate()
             setError('')
+            console.log(name)
+
         })
         .then(result =>{
             history.push(redirect_uri)
-        }).catch((err)=>{
+        })
+        .catch((err)=>{
             setError(err)
-        }).finally(()=>{
-            
+        })
+        .finally(()=>{
+            setIsLoading(false)
         })
     }
 
     // handle the signup function for google sign up 
 
     const handleGoogleSignUp = () =>{
+        setIsLoading(true)
         googleSignIn()
         .then(()=>{
             setError('')
@@ -45,7 +53,7 @@ const Signup = () => {
         }).catch((err)=>{
             setError(err)
         }).finally(()=>{
-            
+            setIsLoading(false)
         })
     }
     
@@ -62,12 +70,19 @@ return (
                     </div>
                     <form>
                         <div className="py-4">
+                        <div className="input-group mb-3 xs-12">
+                                <span className="input-group-text bg-primary">
+                                <i className="fas fa-user" style={{"color": "white", "width": "16px"}}></i>
+                                </span>
+                                <input onKeyUp={getName} type="text" className="form-control" placeholder="Name" />
+                            </div>
                             <div className="input-group mb-3 xs-12">
                                 <span className="input-group-text bg-primary">
                                 <i className="fas fa-user-plus" style={{"color": "white", "width": "16px"}}></i>
                                 </span>
                                 <input onKeyUp={getEmail} type="text" className="form-control" placeholder="Email" />
                             </div>
+
                             <div className="input-group mb-3 xs-12">
                                 <span className="input-group-text bg-primary">
                                 <i className="fas fa-key" style={{"color": "white"}}></i>

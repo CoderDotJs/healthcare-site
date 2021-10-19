@@ -28,10 +28,10 @@ const ExtraSection3 = () => {
                     {/* col  */}
 
                         <Col lg={6} md={6}>
-                        <div class="card border-0 shadow shoadow-md" style={{"width": "18rem;"}}>
-                            <img src="https://photos.healthgrades.com/homeimages/fah-content-2.webp" class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                                <p class="text-dark fw-bold">What Makes a Hospital One of America's Best?</p>
+                        <div className="card border-0 shadow shoadow-md" style={{"width": "18rem"}}>
+                            <img src="https://photos.healthgrades.com/homeimages/fah-content-2.webp" className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                                <p className="text-dark fw-bold">What Makes a Hospital One of America's Best?</p>
                             </div>
                         </div>
                         </Col>
@@ -40,10 +40,10 @@ const ExtraSection3 = () => {
                     {/* col  */}
 
                         <Col lg={6} md={6}>
-                        <div class="card border-0 shadow shoadow-md" style={{"width": "18rem;"}}>
-                            <img src="https://photos.healthgrades.com/homeimages/fah-content-1.webp" class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                                <p class="text-dark fw-bold">Why Hospital Quality Matters: 9 Things to Know</p>
+                        <div className="card border-0 shadow shoadow-md" style={{"width": "18rem"}}>
+                            <img src="https://photos.healthgrades.com/homeimages/fah-content-1.webp" className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                                <p className="text-dark fw-bold">Why Hospital Quality Matters: 9 Things to Know</p>
                             </div>
                         </div>
                         </Col>
@@ -51,10 +51,10 @@ const ExtraSection3 = () => {
                         {/* col  */}
 
                         <Col lg={12} md={12}>
-                        <div class="card border-0 shadow shoadow-md" style={{"width": "40rem;"}}>
+                        <div className="card border-0 shadow shoadow-md" style={{"width": "40rem"}}>
                             <img src="https://photos.healthgrades.com/homeimages/fah-content-3.jpg" alt="..."/>
-                            <div class="card-body">
-                                <p class="text-dark fw-bold">Why Hospital Quality Matters: 9 Things to Know</p>
+                            <div className="card-body">
+                                <p className="text-dark fw-bold">Why Hospital Quality Matters: 9 Things to Know</p>
                             </div>
                         </div>
                         </Col>
@@ -72,7 +72,7 @@ const ExtraSection3 = () => {
                         When you need a medical procedure, finding the right doctor is only half the equation. Receiving your treatment at the right hospital can have a dramatic impact on your outcome. Learn how we rate clinical performance and why hospital quality matters when planning your care.
                         </p>
 
-                        <Link to="/find-a-hospital" style={{'fontSize': "18px", "textDecoration": "none"}}>Browse all procedure topics <i class="fas fa-arrow-right"></i></Link>
+                        <Link to="/find-a-hospital" style={{'fontSize': "18px", "textDecoration": "none"}}>Browse all procedure topics <i className="fas fa-arrow-right"></i></Link>
                     </div>
                 </Col>
             </Row>

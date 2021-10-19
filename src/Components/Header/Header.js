@@ -8,7 +8,7 @@ const Header = () => {
 
     // using stat 
 
-  const {user, logOut} = useAuth();
+  const {user, logOut, name} = useAuth();
 
     return (
 
@@ -38,7 +38,7 @@ const Header = () => {
 
         {
           user.email ? <p style={{"margin": "0"}}>
-            <span style={{"fontSize": "18px", "fontWeight": "bold", "margin": "0 5px"}}>{user.email}</span> <Button variant="danger" onClick={logOut}>Logout</Button>
+            <span style={{"fontSize": "18px", "fontWeight": "bold", "margin": "0 5px"}}>{name}</span> <Button variant="danger" onClick={logOut}>Logout</Button>
           </p>
            :
            <Nav.Link as={Link} to="/login" className="me-2 ">
