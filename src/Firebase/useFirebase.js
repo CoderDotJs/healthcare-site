@@ -10,7 +10,7 @@ const useFirebase = () => {
     const [user, setUser] = useState({});
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    // const [error, setError] = useState('')
+    const [error, setError] = useState('')
 
     //getting the email from input
 
@@ -27,13 +27,7 @@ const useFirebase = () => {
     //google sign in witn popup
 
     const googleSignIn = () =>{
-        signInWithPopup(auth, provider)
-        .then((result) => {
-            // setUser(result)
-            setUser(result.user)
-        }).catch((error) => {
-        alert(error)
-        });
+        return signInWithPopup(auth, provider)
     }
 
     //useing useEffect for on auth state change 
@@ -65,29 +59,24 @@ const useFirebase = () => {
     //sign up with input form
 
     const signUpWithEmail = (e) =>{
-        e.preventDefault();
-        createUserWithEmailAndPassword(auth, email, password)
-        .then((result)=>{
-            setUser(result.user)
-        }).catch((err)=>{
-            alert(err)
-        })
+        return createUserWithEmailAndPassword(auth, email, password);
     }
 
     //sign in with input form 
 
     const signInWithEmail = (e) =>{
-        e.preventDefault();
-        signInWithEmailAndPassword(auth, email, password)
-        .then((result)=>{
-            setUser(result.user)
-        }).catch((err)=>{
-            alert(err)
-        })
+        // e.preventDefault()
+        // signInWithEmailAndPassword(auth, email, password)
+        // .then((result)=>{
+        //     setUser(result.user)
+        // }).catch((err)=>{
+        //     alert(err)
+        // })
+        return signInWithEmailAndPassword(auth, email, password)
     }
 
 
-  return {googleSignIn, user, logOut, getEmail, getPassowrd, signUpWithEmail, signInWithEmail}
+  return {googleSignIn,error, setError, auth, user, logOut, getEmail, getPassowrd, signUpWithEmail, signInWithEmail}
 }
 
 

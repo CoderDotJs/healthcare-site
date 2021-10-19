@@ -22,7 +22,7 @@ const ServiceDetail = () => {
     return (
         <div>
             <h1 className="text-center fw-bold my-5 services__heading">The Doctors of <span className="underline-highlight">{services_name.toUpperCase()}</span></h1>
-        <div class="container mx-auto row row-cols-1 row-cols-md-2 g-4 my-5">
+        <div className="container mx-auto row row-cols-1 row-cols-md-2 g-4 my-5">
 
             
 

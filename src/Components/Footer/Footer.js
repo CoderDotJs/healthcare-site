@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         
         //   Footer 
-<footer className="text-center text-lg-start bg-light text-muted mt-5">
+<footer className="text-center text-lg-start bg-light text-muted">
   {/*   Section: Social media  */}
   <section
     className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
@@ -70,9 +70,6 @@ const Footer = () => {
           </p>
           <p>
             <Link to="/health" className="text-reset">Health A to Z</Link>
-          </p>
-          <p>
-            <a href="#!" className="text-reset">Laravel</a>
           </p>
         </div>
         {/*   Grid column  */}

@@ -10,6 +10,9 @@ import Signup from './Components/Signup/Signup';
 import Footer from './Components/Footer/Footer';
 import AuthProvider from './Context/AuthProvider';
 import ServiceDetail from './Components/ServiceDetail/ServiceDetail';
+import HealthDetails from './Components/HealthDetails/HealthDetails';
+import NotFoundPage from './Components/NotFoundPage/NotFoundPage';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -24,23 +27,29 @@ function App() {
           <Route exact path="/home">
             <Home></Home>
           </Route>
-          <Route exact path="/find-a-doctor">
+          <PrivateRoute exact path="/find-a-doctor">
             <FindDoctor></FindDoctor>
-          </Route>
+          </PrivateRoute>
           <Route exact path="/find-a-hospital">
             <FindHospital></FindHospital>
           </Route>
           <Route exact path="/health">
             <Health></Health>
           </Route>
-          <Route exact path="/services/:services_name">
+          <PrivateRoute exact path="/services/:services_name">
               <ServiceDetail></ServiceDetail>
-          </Route>
+          </PrivateRoute>
+          <PrivateRoute exact path="/health/:title">
+              <HealthDetails></HealthDetails>
+          </PrivateRoute>
           <Route exact path="/login">
             <Login></Login>
           </Route>
           <Route exact path="/signup">
             <Signup></Signup>
+          </Route>
+          <Route exact path="*">
+            <NotFoundPage></NotFoundPage>
           </Route>
         </Switch>
         <Footer></Footer>
