@@ -1,23 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header/Header';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './Components/Home/Home';
+import FindDoctor from './Components/FindDoctor/FindDoctor';
+import FindHospital from './Components/FindHospital/FindHospital';
+import Health from './Components/Health/Health';
+import Login from './Components/Login/Login';
+import Signup from './Components/Signup/Signup';
+import Footer from './Components/Footer/Footer';
+import AuthProvider from './Context/AuthProvider';
+import ServiceDetail from './Components/ServiceDetail/ServiceDetail';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthProvider>
+      <BrowserRouter>
+      <Header></Header>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route exact path="/home">
+            <Home></Home>
+          </Route>
+          <Route exact path="/find-a-doctor">
+            <FindDoctor></FindDoctor>
+          </Route>
+          <Route exact path="/find-a-hospital">
+            <FindHospital></FindHospital>
+          </Route>
+          <Route exact path="/health">
+            <Health></Health>
+          </Route>
+          <Route exact path="/services/:services_name">
+              <ServiceDetail></ServiceDetail>
+          </Route>
+          <Route exact path="/login">
+            <Login></Login>
+          </Route>
+          <Route exact path="/signup">
+            <Signup></Signup>
+          </Route>
+        </Switch>
+        <Footer></Footer>
+      </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }

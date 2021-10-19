@@ -1,0 +1,32 @@
+[
+{
+    "id":1,
+    "service_name":"Family Medicine",
+    "img": "fas fa-briefcase-medical"
+},
+{
+    "id":2,
+    "service_name":"Medicine Specs",
+    "img":"fas fa-stethoscope"
+},
+{
+    "id":3,
+    "service_name":"Dentistry",
+    "img":"fas fa-tooth"
+},
+{
+    "id":4,
+    "service_name":"Orthopedic Surgery",
+    "img": "fas fa-bone"
+},
+{
+    "id":5,
+    "service_name":"Obstetrics Gynecology",
+    "img": "fas fa-baby"
+},
+{
+    "id":6,
+    "service_name":"Anxiety",
+    "img":"fas fa-head-side-virus"
+}
+]

@@ -1,0 +1,179 @@
+[
+    {
+    "id": 1,
+    "image": "https://photos.healthgrades.com/img/prov/3/N/V/3NV7D_w120h160_v36904.jpg",
+    "full_name": "Dr. Omer Tipu, MD",
+    "type": "Family Medicine",
+    "rating": 5.0,
+    "address": "5 Moland Road"
+  }, {
+    "id": 2,
+    "image": "https://photos.healthgrades.com/img/prov/Y/S/M/YSMTK_w120h160_v9444.jpg",
+    "full_name": "Dr. Giovanni Marciano, DO",
+    "type": "Family Medicine",
+    "rating": 4.6,
+    "address": "48 Schmedeman Court"
+  }, {
+    "id": 3,
+    "image": "https://photos.healthgrades.com/img/prov/2/8/N/28NGJ_w120h160_v15588.jpg",
+    "full_name": "Dr. Ilya Burshteyn, MD",
+    "type": "Family Medicine",
+    "rating": 4.5,
+    "address": "6119 Heath Lane"
+  }, {
+    "id": 4,
+    "image": "https://photos.healthgrades.com/img/prov/Y/Q/5/YQ5YY_w120h160_v8655.jpg",
+    "full_name": "Dr. Samira Ovshaev, DO",
+    "type": "Family Medicine",
+    "rating": 5.0,
+    "address": "99 Golf Plaza"
+  }, {
+    "id": 5,
+    "image": "https://photos.healthgrades.com/img/prov/Y/7/C/Y7CY9_w120h160_v6969.jpg",
+    "full_name": "Dr. Jill Rieger, MD",
+    "type": "Medicine Specs",
+    "rating": 4.9,
+    "address": "474 Ryan Park"
+  }, {
+    "id": 6,
+    "image": "https://photos.healthgrades.com/img/prov/G/C/V/GCVV4_w120h160_v34516.jpg",
+    "full_name": "Dr. Emily Taylor, MD",
+    "type": "Medicine Specs",
+    "rating": 4.8,
+    "address": "68832 Bayside Way"
+  }, {
+    "id": 7,
+    "image": "https://photos.healthgrades.com/img/prov/Y/S/B/YSBYW_w120h160_v14920.jpg",
+    "full_name": "Dr. Shing-Chiu Wong, MD",
+    "type": "Medicine Specs",
+    "rating": 4.7,
+    "address": "0091 Victoria Avenue"
+  }, {
+    "id": 8,
+    "image": "https://photos.healthgrades.com/img/prov/Y/6/4/Y64P9_w120h160_v28552.jpg",
+    "full_name": "Dr. Rizwanullah Hameed, MD",
+    "type": "Medicine Specs",
+    "rating": 4.6,
+    "address": "818 Knutson Parkway"
+  }, {
+    "id": 9,
+    "image": "https://photos.healthgrades.com/img/prov/3/s/j/3sjsm_w120h160_vSyuAS1hWF.jpg",
+    "full_name": "Dr. Elliot Schreiber, DMD",
+    "type": "Dentistry",
+    "rating": 4.5,
+    "address": "265 Clarendon Pass"
+  }, {
+    "id": 10,
+    "image": "https://photos.healthgrades.com/img/prov/X/Y/M/XYM8HW5_w120h160_v49736.jpg",
+    "full_name": "Dr. Jordan Reich, DDS",
+    "type": "Dentistry",
+    "rating": 5.0,
+    "address": "8 Sherman Trail"
+  }, {
+    "id": 11,
+    "image": "https://photos.healthgrades.com/img/prov/G/V/V/GVV44_w120h160_v12732.jpg",
+    "full_name": "Dr. Ishwinder Saran, DMD",
+    "type": "Dentistry",
+    "rating": 4.5,
+    "address": "8 Bunker Hill Park"
+  }, {
+    "id": 12,
+    "image": "https://photos.healthgrades.com/img/prov/3/S/M/3SM88_w120h160_v26496.jpg",
+    "full_name": "Dr. Jonelle Cox, DDS",
+    "type": "Dentistry",
+    "rating": 4.9,
+    "address": "60 Debs Pass"
+  }, {
+    "id": 13,
+    "image": "https://photos.healthgrades.com/img/prov/2/K/5/2K5GX_w120h160_v50320.jpg",
+    "full_name": "Dr. James Capozzi, MD",
+    "type": "Orthopedic Surgery",
+    "rating": 4.6,
+    "address": "1217 Dunning Crossing"
+  }, {
+    "id": 14,
+    "image": "https://photos.healthgrades.com/img/prov/3/3/k/33k6l_w120h160_vrkM0ulS8O.jpg",
+    "full_name": "Dr. Omid Barzideh, MD",
+    "type": "Orthopedic Surgery",
+    "rating": 4.8,
+    "address": "08994 Village Junction"
+  }, {
+    "id": 15,
+    "image": "https://photos.healthgrades.com/img/prov/2/f/8/2f8nr_w120h160_vr1Eaui73O.jpg",
+    "full_name": "Dr. Mark Grossman, MD",
+    "type": "Orthopedic Surgery",
+    "rating": 4.9,
+    "address": "8 Blackbird Parkway"
+  }, {
+    "id": 16,
+    "image": "https://photos.healthgrades.com/img/prov/X/T/D/XTDKN_w120h160_v25148.jpg",
+    "full_name": "Dr. David Edelstein, MD",
+    "type": "Orthopedic Surgery",
+    "rating": 4.9,
+    "address": "5 Farmco Plaza"
+  }, {
+    "id": 17,
+    "image": "https://photos.healthgrades.com/img/prov/x/y/l/xyldq88_w120h160_vHkBcWNNKP.jpg",
+    "full_name": "Adenike Whnp-Bc, NP",
+    "type": "Obstetrics Gynecology",
+    "rating": 5.0,
+    "address": "614 Melby Place"
+  }, {
+    "id": 18,
+    "image": "https://photos.healthgrades.com/img/prov/x/x/t/xxt4y_w120h160_vSyemuVB4tv.jpg",
+    "full_name": "Dr. Jaquelline Perlman, MD",
+    "type": "Obstetrics Gynecology",
+    "rating": 4.9,
+    "address": "80 Morningstar Place"
+  }, {
+    "id": 19,
+    "image": "https://photos.healthgrades.com/img/prov/G/3/W/G3WPW_w120h160_v4296.jpg",
+    "full_name": "Dr. Christopher Eswar, MD",
+    "type": "Obstetrics Gynecology",
+    "rating": 4.7,
+    "address": "30767 Nobel Center"
+  }, {
+    "id": 20,
+    "image": "https://photos.healthgrades.com/img/prov/2/F/C/2FCGF_w120h160_v55900.jpg",
+    "full_name": "Dr. Richard Roberts, MD",
+    "type": "Obstetrics Gynecology",
+    "rating": 4.5,
+    "address": "802 Lerdahl Center"
+  }, {
+    "id": 21,
+    "image": "https://photos.healthgrades.com/img/prov/2/S/7/2S73W_w120h160_v41512.jpg",
+    "full_name": "Dr. Geoffrey Bergman, MD",
+    "type": "Anxiety",
+    "rating": 4.6,
+    "address": "66941 Jenna Circle"
+  }, {
+    "id": 22,
+    "image": "https://photos.healthgrades.com/img/prov/2/M/T/2MTHF_w120h160_v41908.jpg",
+    "full_name": "TDr. Robert Minutello, MD",
+    "type": "Anxiety",
+    "rating": 4.6,
+    "address": "106 Armistice Trail"
+  }, {
+    "id": 23,
+    "image": "https://photos.healthgrades.com/img/prov/3/D/8/3D8X7_w120h160_v52408.jpg",
+    "full_name": "Dr. Tamim Nazif, MD",
+    "type": "Anxiety",
+    "rating": 4.7,
+    "address": "44 Eagan Parkway"
+  }, {
+    "id": 24,
+    "image": "https://photos.healthgrades.com/img/prov/2/7/M/27M9P_w120h160_v22432.jpg",
+    "full_name": "Dr. Benjamin Barrah, MD",
+    "type": "Anxiety",
+    "rating": 4.7,
+    "address": "2928 Sloan Trail"
+  }, {
+    "id": 25,
+    "image": "https://photos.healthgrades.com/img/prov/G/G/H/GGHF7_w120h160_v7667.jpg",
+    "full_name": "Dr. Eugene Shostak, MD",
+    "type": "Anxiety",
+    "rating": 4.5,
+    "address": "57593 Orin Alley"
+  }
+]
+  

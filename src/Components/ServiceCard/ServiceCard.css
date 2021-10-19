@@ -1,0 +1,12 @@
+.services__icon{
+    color: white;
+}
+.service__icon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background: rgb(2, 2, 193);
+    border-radius: 100px;
+}
