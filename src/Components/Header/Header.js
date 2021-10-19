@@ -8,7 +8,12 @@ const Header = () => {
 
     // using stat 
 
-  const {user, logOut, name} = useAuth();
+  const {user, logOut} = useAuth();
+
+
+  console.log(user)
+
+  
 
     return (
 
@@ -23,7 +28,7 @@ const Header = () => {
     <Navbar.Collapse id="navbarScroll">
       <Nav
         className="me-auto my-2 my-lg-0"
-        style={{ maxHeight: '100px' }}
+        style={{ "maxHeight": '100px' }}
         navbarScroll
       >
 
@@ -38,7 +43,7 @@ const Header = () => {
 
         {
           user.email ? <p style={{"margin": "0"}}>
-            <span style={{"fontSize": "18px", "fontWeight": "bold", "margin": "0 5px"}}>{name}</span> <Button variant="danger" onClick={logOut}>Logout</Button>
+            <span style={{"fontSize": "18px", "fontWeight": "bold", "margin": "0 5px"}}>{user?.displayName}</span> <Button variant="danger" onClick={logOut}>Logout</Button>
           </p>
            :
            <Nav.Link as={Link} to="/login" className="me-2 ">

@@ -13,15 +13,18 @@ const useFirebase = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('')
     const [isLoading, setIsLoading] = useState(true)
+
     //getting the email from input
 
     const getEmail = (e) =>{
         setEmail(e.target.value)
     }
 
-    //getting the name form the input 
+    //getting the name form input 
+
     const getName = (e) =>{
         setName(e.target.value)
+        
     }
 
     //getting the password from input
@@ -42,11 +45,7 @@ const useFirebase = () => {
         onAuthStateChanged(auth, user =>{
             if(user !== null){
                 setUser(user)
-                updateProfile(auth.currentUser, {
-                    displayName: name,
-                  }).then(()=>{
-                      console.log(user.displayName)
-                  })
+                console.log(user?.displayName)
             }
             else{
                 setUser({})
@@ -69,14 +68,6 @@ const useFirebase = () => {
     };
 
 
-    const nameUpdate = () =>{
-        
-        updateProfile(auth.currentUser, {
-            displayName: name,
-          }).then(()=>{
-              console.log("name added")
-          })
-    }
 
     //sign up with input form
 
@@ -101,11 +92,10 @@ const useFirebase = () => {
         logOut,
         isLoading,
         setIsLoading,
-        getEmail, 
+        getEmail,
         getName,
         name,
         setName,
-        nameUpdate,
         updateProfile,
         getPassowrd, 
         signUpWithEmail, 

@@ -27,8 +27,8 @@ const ExtraSection3 = () => {
 
                     {/* col  */}
 
-                        <Col lg={6} md={6}>
-                        <div className="card border-0 shadow shoadow-md" style={{"width": "18rem"}}>
+                        <Col lg={6} md={6} sm={12}>
+                        <div className="card border-0 shadow shoadow-md style__third" style={{"width": "18rem"}}>
                             <img src="https://photos.healthgrades.com/homeimages/fah-content-2.webp" className="card-img-top" alt="..."/>
                             <div className="card-body">
                                 <p className="text-dark fw-bold">What Makes a Hospital One of America's Best?</p>
@@ -39,8 +39,8 @@ const ExtraSection3 = () => {
 
                     {/* col  */}
 
-                        <Col lg={6} md={6}>
-                        <div className="card border-0 shadow shoadow-md" style={{"width": "18rem"}}>
+                        <Col lg={6} md={6} sm={12}>
+                        <div className="card border-0 shadow shoadow-md style__third" style={{"width": "18rem"}}>
                             <img src="https://photos.healthgrades.com/homeimages/fah-content-1.webp" className="card-img-top" alt="..."/>
                             <div className="card-body">
                                 <p className="text-dark fw-bold">Why Hospital Quality Matters: 9 Things to Know</p>
@@ -50,8 +50,8 @@ const ExtraSection3 = () => {
 
                         {/* col  */}
 
-                        <Col lg={12} md={12}>
-                        <div className="card border-0 shadow shoadow-md" style={{"width": "40rem"}}>
+                        <Col lg={12} md={12} sm={12}>
+                        <div className="card border-0 shadow shoadow-md style__third">
                             <img src="https://photos.healthgrades.com/homeimages/fah-content-3.jpg" alt="..."/>
                             <div className="card-body">
                                 <p className="text-dark fw-bold">Why Hospital Quality Matters: 9 Things to Know</p>

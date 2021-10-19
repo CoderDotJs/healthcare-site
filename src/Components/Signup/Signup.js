@@ -8,23 +8,24 @@ const Signup = () => {
 
     // getting the function form useAuth 
 
-    const { googleSignIn, auth, updateProfile, setIsLoading, getEmail, getPassowrd, signUpWithEmail, error, setError, getName, name, setName, nameUpdate} = useAuth();
+    const { googleSignIn,user, auth, updateProfile, setIsLoading, getEmail, getPassowrd, signUpWithEmail, error, setError, getName, name, setName, nameUpdate} = useAuth();
 
     // using location history 
 
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/health'
+    const redirect_uri = location.state?.from || '/home'
     
         // handle the sign up button 
 
     const handleSignUp = (e) =>{
         setIsLoading(true)
         e.preventDefault()
-        
         signUpWithEmail()
         .then(()=>{
-            nameUpdate()
+            updateProfile(auth.currentUser, {
+                displayName: name,
+            })
             setError('')
             console.log(name)
 

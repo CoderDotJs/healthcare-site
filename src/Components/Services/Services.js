@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Row } from 'react-bootstrap';
 import ServiceCard from '../ServiceCard/ServiceCard';
 import './Services.css'
 

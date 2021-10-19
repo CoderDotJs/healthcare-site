@@ -13,6 +13,9 @@ body{
     .banner__heading{
         font-size: 3rem !important;
     }
+    .style__third{
+        width: 100% !important;
+    }
 }
 
     /* media for small size device  */
@@ -38,6 +41,9 @@ body{
     }
     .dove__text{
         font-size: 12px;
+    }
+    .style__third{
+        width: 100% !important;
     }
 }
 
