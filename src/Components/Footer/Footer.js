@@ -81,16 +81,16 @@ const Footer = () => {
             Useful links
           </h6>
           <p>
-            <a href="#!" className="text-reset">Pricing</a>
+            <a href="#!" className="text-reset">Facebook</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">Settings</a>
+            <a href="#!" className="text-reset">Twitter</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">Orders</a>
+            <a href="#!" className="text-reset">Instagram</a>
           </p>
           <p>
-            <a href="#!" className="text-reset">Help</a>
+            <a href="#!" className="text-reset">Others</a>
           </p>
         </div>
         {/*   Grid column  */}
