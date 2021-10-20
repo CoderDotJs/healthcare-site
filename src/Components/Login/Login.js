@@ -15,7 +15,7 @@ const Login = () => {
 
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state.from || '/home'
+    const redirect_uri = location.state?.from || '/home'
     
         // function for handle the sign in 
 
