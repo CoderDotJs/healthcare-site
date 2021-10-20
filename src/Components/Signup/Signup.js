@@ -8,7 +8,7 @@ const Signup = () => {
 
     // getting the function form useAuth 
 
-    const { googleSignIn,user, auth, updateProfile, setIsLoading, getEmail, getPassowrd, signUpWithEmail, error, setError, getName, name, setName, nameUpdate} = useAuth();
+    const { googleSignIn,user, auth, updateProfile,logOut, setIsLoading, getEmail, getPassowrd, signUpWithEmail, error, setError, getName, name, setName, nameUpdate} = useAuth();
 
     // using location history 
 
@@ -22,19 +22,22 @@ const Signup = () => {
         setIsLoading(true)
         e.preventDefault()
         signUpWithEmail()
-        .then(()=>{
+        .then((result)=>{
             updateProfile(auth.currentUser, {
                 displayName: name,
             })
+            console.log(result.user)
+            setError('')
+            alert('Successfully Create Account! Please Login Now!');
+            logOut()
             setError('')
             console.log(name)
-
         })
         .then(result =>{
-            history.push(redirect_uri)
+            history.push("/login")
         })
         .catch((err)=>{
-            setError(err)
+            setError(err.message)
         })
         .finally(()=>{
             setIsLoading(false)
@@ -52,7 +55,8 @@ const Signup = () => {
         .then(result =>{
             history.push(redirect_uri)
         }).catch((err)=>{
-            setError(err)
+            setError(err.message)
+            console.log( err.message)
         }).finally(()=>{
             setIsLoading(false)
         })
@@ -90,6 +94,9 @@ return (
                                 </span>
                                 <input onKeyUp={getPassowrd} type="password" className="form-control" placeholder="Password" />
                             </div>
+                            {
+                                    error ? <p className="text-danger">{error.toString()}</p> : ''
+                            }
                             <button onClick={handleSignUp} className="btn btn-primary text-center mt-2" type="submit">
                                 Sign Up
                             </button>

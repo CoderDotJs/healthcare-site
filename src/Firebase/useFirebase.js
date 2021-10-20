@@ -31,6 +31,12 @@ const useFirebase = () => {
 
     const getPassowrd = (e) =>{
         setPassword(e.target.value)
+        if(password >= 6){
+            setError("Password Can not be less then 6 caracters")
+        }
+        else{
+            setError('')
+        }
     }
 
     //google sign in witn popup

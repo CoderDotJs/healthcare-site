@@ -15,7 +15,7 @@ const Login = () => {
 
     const location = useLocation();
     const history = useHistory();
-    const redirect_uri = location.state?.from || '/health'
+    const redirect_uri = location.state.from || '/home'
     
         // function for handle the sign in 
 
@@ -29,7 +29,7 @@ const Login = () => {
         .then(result =>{
             history.push(redirect_uri)
         }).catch((err)=>{
-            setError(err)
+            setError(err.message)
         }).finally(()=>{
             setIsLoading(false)
         })
@@ -46,7 +46,7 @@ const Login = () => {
         .then(result =>{
             history.push(redirect_uri)
         }).catch((err)=>{
-            setError(err)
+            setError(err.message)
         }).finally(()=>{
             setIsLoading(false)
         })

@@ -37,12 +37,13 @@ const Header = () => {
         <Nav.Link as={Link} to="/find-a-doctor">Find A Doctor</Nav.Link>
         <Nav.Link as={Link} to="/find-a-hospital">Find A Hospital</Nav.Link>
         <Nav.Link as={Link} to="/health">Health A to Z</Nav.Link>
+        <Nav.Link as={Link} to="/covid-status">Covid 19 Status</Nav.Link>
       </Nav>
 
           {/* dynamic login and logout button show  */}
 
         {
-          user.email ? <p style={{"margin": "0"}}>
+          user?.email ? <p style={{"margin": "0"}}>
             <span style={{"fontSize": "18px", "fontWeight": "bold", "margin": "0 5px"}}>{user?.displayName}</span> <Button variant="danger" onClick={logOut}>Logout</Button>
           </p>
            :

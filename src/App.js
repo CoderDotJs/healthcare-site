@@ -13,6 +13,7 @@ import ServiceDetail from './Components/ServiceDetail/ServiceDetail';
 import HealthDetails from './Components/HealthDetails/HealthDetails';
 import NotFoundPage from './Components/NotFoundPage/NotFoundPage';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Covid from './Components/Covid/Covid';
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute exact path="/health/:title"> {/*for per post on health direcotry*/ }
               <HealthDetails></HealthDetails>
+          </PrivateRoute>
+          <PrivateRoute exact path="/covid-status"> {/*for login direcotry*/ }
+            <Covid></Covid>
           </PrivateRoute>
           <Route exact path="/login"> {/*for login direcotry*/ }
             <Login></Login>
