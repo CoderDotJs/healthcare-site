@@ -8,7 +8,7 @@ const Signup = () => {
 
     // getting the function form useAuth 
 
-    const { googleSignIn,user, auth, updateProfile,logOut, setIsLoading, getEmail, getPassowrd, signUpWithEmail, error, setError, getName, name, setName, nameUpdate} = useAuth();
+    const { googleSignIn, auth, updateProfile,logOut, setIsLoading, getEmail, getPassowrd, signUpWithEmail, error, setError, getName, name} = useAuth();
 
     // using location history 
 
